@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGrey">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_wishlistFragment"
+        android:layout_margin="0dp"
+        android:background="@color/colorGrey"
+        android:scrollbars="vertical"
+        android:layout_above="@id/add_wishlist">
+    </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:layout_marginBottom="2dp"
+        android:text="ADD"
+        android:id="@+id/add_wishlist"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorFont"></Button>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_etWishlist"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorFont"
+        android:layout_toLeftOf="@id/add_wishlist"
+        android:hint="Enter new movie"
+        android:textColorHint="@color/colorFont"
+
+        android:background="@drawable/edit_text_shape"></EditText>
+
+</RelativeLayout>

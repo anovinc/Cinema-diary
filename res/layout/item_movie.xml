@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_movie"
+    android:layout_margin="8dp">
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_name"
+        android:layout_marginLeft="2dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorFont"
+        android:layout_marginBottom="2dp"
+        android:clickable="true">
+
+    </TextView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remove_btn"
+        android:background="@color/colorGrey"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/movie_name"
+        android:src="@drawable/ic_delete_24dp"></ImageButton>
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:id="@+id/rating_TV"
+        android:textSize="10sp"
+        android:layout_below="@id/movie_name"
+        android:textColor="@color/colorFont"
+        ></TextView>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

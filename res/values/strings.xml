@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cinema diary</string>
+    <string name="watched">watched</string>
+    <string name="wishlist">wishlist</string>
+    <string name="title">title:</string>
+    <string name="year">year:</string>
+    <string name="actors">actors:</string>
+    <string name="summary">summary:</string>
+
+
+</resources>

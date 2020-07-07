@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGrey"
+
+    >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/add_button"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorGrey"
+        android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape"
+        android:text="ADD"
+        android:textColor="@color/colorFont"
+        android:layout_marginBottom="4dp"
+
+        ></Button>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_rating"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorFont"
+        android:layout_toLeftOf="@id/add_button"
+        android:hint="Enter rating for the movie"
+        android:layout_marginLeft="1.5dp"
+        android:textColorHint="@color/colorFont"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_text_shape"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/add_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="1.5dp"
+        android:layout_above="@id/add_rating"
+        android:layout_toLeftOf="@id/add_button"
+        android:background="@drawable/edit_text_shape"
+        android:hint="Enter new movie"
+        android:textColor="@color/colorFont"
+        android:textColorHint="@color/colorFont"></EditText>
+
+
+</RelativeLayout>
